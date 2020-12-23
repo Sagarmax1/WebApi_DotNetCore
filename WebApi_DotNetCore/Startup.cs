@@ -26,8 +26,8 @@ namespace WebApi_DotNetCore
         public void ConfigureServices(IServiceCollection services)
         {
              services.AddControllers();
+             services.AddCors();
 
-            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +37,9 @@ namespace WebApi_DotNetCore
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder =>
+            builder.WithOrigins("http://localhost:3000", "*", "*"));
 
             app.UseHttpsRedirection();
 

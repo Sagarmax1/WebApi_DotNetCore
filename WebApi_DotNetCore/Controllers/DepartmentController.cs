@@ -67,8 +67,5 @@ namespace WebApi_DotNetCore.Controllers
             return Ok(dltdep);
         }
 
-
-
-
     }
 }
