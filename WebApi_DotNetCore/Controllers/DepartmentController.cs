@@ -53,6 +53,12 @@ namespace WebApi_DotNetCore.Controllers
             return Ok(adddep);
         }
 
+        //public string POST(Department dep)
+        //{
+        //    string adddpt = departmentBAL.CreateDepartment(dep);
+        //    return adddpt;
+        //}
+
         [HttpPut("EditDepartment")]
         public IActionResult EditDepartment(Department dep)
         {

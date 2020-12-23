@@ -18,10 +18,12 @@ namespace WebApi_DotNetCore.Repository.BusinessLayer
             return objdal.GetAll();
         }
 
-        public string CreateDepartment (Department dep)
+        public string CreateDepartment(Department dep)
         {
             return objdal.CreateDepartment(dep);
         }
+
+
 
         public string EditDepartment(Department dep)
         {
